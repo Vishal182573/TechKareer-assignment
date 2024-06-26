@@ -4,5 +4,16 @@ import JOBICON from "./images/job.png"
 import PAYMENT from "./images/payments.png"
 import MESSAGE from "./images/message.png"
 import COMPANYLOGO from "./images/companylogo.png"
+import SIDEBARPEOPLE from "./images/person.png"
+import SIDEBARMATCHES from "./images/matches.png"
+import SIDEBARMESSAGE from "./images/sidebarmessage.png"
+import SIDEBARVIEW from "./images/sidebarview.png"
+import SIDEBARDELTE from "./images/delete.png"
+import SIDEBAREDIT from "./images/edit.png"
+import FIGMALOGO from "./images/figmalogo.png"
+import ADOBE from "./images/adobe.png"
+import ADOBEXD from "./images/adobexd.png"
+import COINTSTACK from "./images/coinstack.png"
+import LOCATION from "./images/location.png"
 
-export {BELLICON,DOWNARROW,JOBICON,PAYMENT,MESSAGE,COMPANYLOGO} ;
+export {BELLICON,DOWNARROW,JOBICON,PAYMENT,MESSAGE,COMPANYLOGO,SIDEBARDELTE,SIDEBAREDIT,SIDEBARMATCHES,SIDEBARMESSAGE,SIDEBARPEOPLE,SIDEBARVIEW,FIGMALOGO,ADOBE,ADOBEXD,COINTSTACK,LOCATION} ;

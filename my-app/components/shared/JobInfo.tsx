@@ -6,7 +6,7 @@ import { jobData } from '@/global/data';
 
 const JobInfo: React.FC = () => {
   return (
-    <section className="p-5 px-20 shadow-sm">
+    <section className="p-5 lg:px-20 shadow-sm text-sm lg:text-lg">
       <h3 className="text-sm  text-gray-500 mb-3">About the job</h3>
       <ul className=" list-decimal pl-4">
         <li>Handle the UI/UX research design</li>

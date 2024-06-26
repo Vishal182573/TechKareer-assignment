@@ -1,11 +1,21 @@
+import { ADOBE, ADOBEXD, COINTSTACK, FIGMALOGO, LOCATION, SIDEBARMATCHES, SIDEBARMESSAGE, SIDEBARPEOPLE, SIDEBARVIEW } from "@/public";
+
 // data.ts
 export const jobData = {
     title: "Senior Product Designer",
-    location: "Delaware, USA",
-    salary: "$300k-$400k",
+    location: {
+      place:"Delaware, USA",
+      img:LOCATION,
+    },
+    salary: {
+      val:"$300k-$400k",
+      img:COINTSTACK,
+    },
     status: "Open",
     postedDate: "2 days ago",
-    skills: ["Figma", "Adobe Illustrator", "Adobe XD"],
+    skills: [{name:"Figma",img:FIGMALOGO}, {name:"Adobe Illustrator",img:ADOBE}, {
+      name:"Adobe XD",img:ADOBEXD
+    }],
     preferredLanguage: "English",
     jobType: "Full time",
     experience: "3+ Years of Experience",
@@ -30,10 +40,22 @@ export const jobData = {
       funding:"Bootstrapped",
     },
     stats: {
-      applicants: 400,
-      Matches:100,
-      messages: 147,
-      views: 800,
+      applicants:{
+        stat:400,
+        img:SIDEBARPEOPLE,
+      },
+      Matches:{
+        stat:100,
+        img:SIDEBARMATCHES,
+      },
+      messages: {
+        stat:147,
+        img:SIDEBARMESSAGE
+      },
+      views:{
+        stat: 800,
+        img:SIDEBARVIEW,
+      },
     },
   };
   

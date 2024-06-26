@@ -7,7 +7,7 @@ import { COMPANYLOGO } from '@/public';
 
 const CompanyInfo: React.FC = () => {
   return (
-    <section className="p-4 px-20">
+    <section className="p-4 lg:px-20">
       <div>
         <div className='flex space-x-4 items-center justify-start'>
           <Image
@@ -19,7 +19,7 @@ const CompanyInfo: React.FC = () => {
           />
           <h4 className="text-lg font-bold">{jobData.company.name}</h4>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 text-xs lg:text-lg">
           <div>
             <p className="text-gray-600">Company size</p>
             <p className="font-semibold">{jobData.company.size}</p>
