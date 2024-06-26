@@ -31,7 +31,7 @@ const Requirements: React.FC = () => {
         <div className="font-bold text-sm">{jobData.jobType}</div>
       </div>
       <div className='flex flex-col justify-center items-start lg:text-xl space-y-3'>
-        <h3 className="font-semibold text-gray-500 text-xs">Experience</h3>
+        <h3 className="font-semibold text-gray-500 text-xs">Year of Experience</h3>
         <div className="font-bold text-sm">{jobData.experience}</div>
       </div>
     </section>
