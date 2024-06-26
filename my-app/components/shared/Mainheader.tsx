@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from "next/image";
 import { Button } from "../ui/button";
-import Link from "next/link";
+import {APPLOGO} from "@/public"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { BELLICON, DOWNARROW, JOBICON, MESSAGE, PAYMENT } from '@/public';
 
@@ -18,15 +18,18 @@ export default function MainHeader() {
 
     return (
         <header className=' w-full z-10 flex flex-col justify-center items-center sticky top-0 bg-white'>
-        <div className="w-full items-center justify-between text-sm lg:flex p-4 shadow-sm">
+        <div className="w-full items-center justify-between text-sm lg:flex px-4 py-5 shadow-sm">
             <section className=" w-full flex justify-between items-center px-4">
-                <div className="flex justify-between items-center p-3 px-5 font-bold bg-gray-300 text-red-500">
-                    Logo
-                </div>
+                <Image
+                src={APPLOGO}
+                alt='logo'
+                height={90}
+                width={90}
+                />
                 <div className="justify-between items-center border rounded-3xl p-2 space-x-16 shadow-md text-gray-500 hidden lg:flex">
                     <Button
                         variant={"ghost"}
-                        className={`rounded-3xl flex justify-center items-center font-semibold ${selectedButton === 'Jobs' ? 'bg-orange-600 text-white' : ''}`}
+                        className={`p-6 rounded-3xl flex justify-center items-center font-semibold ${selectedButton === 'Jobs' ? 'bg-orange-600 text-white' : ''}`}
                         onClick={() => handleButtonClick('Jobs')}
                     >
                         <Image
@@ -42,7 +45,7 @@ export default function MainHeader() {
                     </Button>
                     <Button
                         variant={"ghost"}
-                        className={`rounded-3xl font-semibold ${selectedButton === 'Messages' ? 'bg-orange-600 text-white' : ''}`}
+                        className={`p-6 rounded-3xl font-semibold ${selectedButton === 'Messages' ? 'bg-orange-600 text-white' : ''}`}
                         onClick={() => handleButtonClick('Messages')}
                     >
                         <Image
@@ -58,7 +61,7 @@ export default function MainHeader() {
                     </Button>
                     <Button
                         variant={"ghost"}
-                        className={`rounded-3xl font-semibold ${selectedButton === 'Payments' ? 'bg-orange-600 text-white' : ''}`}
+                        className={`p-6 rounded-3xl font-semibold ${selectedButton === 'Payments' ? 'bg-orange-600 text-white' : ''}`}
                         onClick={() => handleButtonClick('Payments')}
                     >
                         <Image
@@ -77,8 +80,8 @@ export default function MainHeader() {
                     <Image
                     src={BELLICON}
                     alt='bell'
-                    width={20}
-                    height={20}
+                    width={25}
+                    height={25}
                     />
                     <DropdownMenu>
                         <DropdownMenuTrigger className="outline-none">

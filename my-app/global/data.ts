@@ -22,7 +22,6 @@ export const jobData = {
     benefits: [
       "Health insurance",
       "Provident Fund",
-      "Yearly bonus",
     ],
     schedule: "Day shift",
     payTypes: [
